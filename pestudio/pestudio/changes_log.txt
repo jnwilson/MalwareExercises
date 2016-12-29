@@ -1,0 +1,137 @@
+
+File:			changes_log.txt
+Project:		pestudio
+Email			info@winitor.com
+Web:			www.winitor.com
+
+Copyright (C) 2009-2016, Marc Ochsenmeier
+
+Version 8.54
+. fixed bug with libraries
+
+Version 8.53
+. Added indicators
+. Show overlay strings numbers
+. Detect duplicated exported symbols
+. Enhanced unicode strings detection
+. Show strings location map with colors
+. Differentiate URLs referenced in the certificate
+. Fixed bugs
+
+Version 8.52
+. Differentiate between standard and professional (pro) versions of pestudio
+. Added deletion of overlay
+. Added computation of entropy
+. Added detection of TLS Callback functions
+. Show more details about sections
+. Fixed bugs and crash
+
+Version 8.51
+. renamed pestudioprompt.exe into pestudiox.exe
+. Added virustotal scoring of hardcoded URL
+. Added detection of pipes
+. Added Network Watchdog to update Virustotal score automatically
+. Added XML switches to define the colors of the front-end
+. Fixed ordinal functions mapping for 64bit images
+. Fixed a crash when handling overlay
+. Fixed a bug when retrieving the Description of the delay-loaded libraries
+
+Version 8.00 to 8.50
+. Fixed a bug when handling exported functions of 64bit executables
+. Added detection of Windows builtin services
+. Fixed a bug when handling strings
+. Extended Thresholds
+. Extended Indicators
+. Show virustotal score for Overlay (when available)
+. Fixed an issue in the Debug detection
+. Fixed an issue in imported symbols by ordinal for 64bit files
+. Added computation of Imports Hash (imphash)
+. Added detection of strings embedded in non-PE files
+. Fixed a crash with malformed files
+. Corrected duplicates during collection of functions statistics
+. Added Virustotal aging and submission date
+. Extended Languages detection and mapping
+. Added PeID Signature detection 
+. Added XML-based detection of OIDs
+. Added XML-based detection of useragent
+. Added detection of references to Firefox API
+. Added MD5 Blacklist for a file and its Resources 
+. Extended detection of Overlay
+. Extended validation of Sections
+. Added Blacklist of MD5 dedicated to the Overlay
+. Extended detection of files embedded in Resources
+. Added detection of Regular Expressions and Threshold
+. Fixed a bug when handling the imports of some images
+. Added Functions Groups classification
+. Resources with unknown Signature and containing only text are now tagged as Text
+. Fixed a bug when handling the Characteristics of the FileHeader
+. Added MD5, SHA1 and Virustotal Score for Overlay
+. Fixed bugs 
+
+Version 6.00 to 7.00
+. Added Dump of Indicators
+. Added Dump of Manifest
+. Added Context menu for Certificates
+. Added Dump of Certificates
+. Raw discovery of fundamental characteristics of the Certificate(s) embedded in the Image
+. Handle non-printable characters in XML report
+. Added more Indicators specific to the location of the Entry Point
+. Added more details (offset and size) for each file Cave detected
+. Show the name of the section BaseOfCode is located in
+. Fixed reporting of the Libraries in the XML report
+. Added Indicators specific for First and Last Sections
+. Take virtual Section into account when pointing the overlay
+. Fixed detection of MPRESS under 64bit
+
+Version 6.00
+. Fixed a bug by reading Symbols
+. Corrected missing Dependencies for some types of images
+. Renamed *.XML files to PeStudio*.XML
+. Interfaces to PeParser (PeParser.h and PeParser.lib) are now part of the Package.
+. Added Indexing of String
+. Added Detection of duplicated Section Names
+. Allow Strings length choice for filtering at the UI
+. Show Strings at the UI
+. Added Strings count in output XML
+. Detect Section-less images and added in Indicators.XML
+. Correct Address Offset of reported Strings
+
+Version 5.00
+. The Strings contained in the file analysed can now be exported to the output XML file
+. Added validation Check of AddressOfEntryPoint field
+. Custom Resources are shown in orange colour
+. Corrected handling of Certificate Directory
+. Corrected colouring of Indicators
+. When handling a resources only images, some validity checks are different
+. Enhanced detection of device driver images
+. renamed parameters for command prompt (see Prompt support description above)
+. Added detection of CAB, PDF, RIFF, GIF, PNG files
+. Added detection of "requireAdministrator" Execution Level from the Manifest
+. Added Command Prompt support (see Prompt support description above)
+. Added "The image exports XY Symbols" as new Indicator
+. Added more obsolete functions in the WindowsFunctionsDeprecated.xml file (delivered with this project)
+
+Version 1.0 to 4.0
+. Support 64bit Images on 32bit Platform
+. Show Resources Languages
+. Show Type of Debug information (NB09, NB10, NB11, RSDS )
+. Show imported Functions of missing libraries
+. Show total number of Bytes available in Caves
+. Show Gaps in Exported Symbols collection
+. Show Section Name the Base of Data belongs to
+. Added OptionalHeader to XML report
+. Added detection of duplicated Sections names
+. Added detection of Code-less images
+. Added detection of Section containing the Entry point
+. Corrected filtering of Obsolete Imported Functions
+. Corrected Imported Symbols for 64bit images
+. Corrected Page-able Section Flag
+. Corrected detection of msstyles "Resources Only" Images
+. Corrected a crash that takes place when switching between Tree and list View in Resources Tab
+. Added Detection of Image Obfuscation (encryption, compression) as Evidence
+. Un-decorate function names
+. Support Manifest dependentAssembly.
+. support Side-by-Side libraries.
+. Support Forwarded Functions
+. Filtering Obsolete Functions
+. Enumeration of Implicit dependencies and other general information
